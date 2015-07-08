@@ -8,6 +8,9 @@ then
 	str="mysql 运行正常！"
 else
 	str="mysql 目前处于关闭，挂起状态"
+	#mysql start
+	sudo service mysql start
 fi
+echo $str
 
-echo $str|mail -s 'mysql server status' root@lampym.com
+#echo $str|mail -s 'mysql server status' root@lampym.com
