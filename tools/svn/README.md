@@ -2,7 +2,7 @@
 
 `./svn_log.sh -m 1233 HEAD wangjichao diff`
 - 查看1233版本到当前HEAD之间wangjichao修改的文件，并存入diff目录
- ![image](https://github.com/wjcgithub/dotvim/raw/master/screenshots/aaaa.jpg)
+![image](https://github.com/wjcgithub/myshell/blob/master/tools/svn/img/diff.png)
 
 2. 将某个目录的文件按照自定义规则展示出来
 
