@@ -1,4 +1,5 @@
 - 查看某段版本之间内某人修改的文件历史（不包括删除的文件），并用树型结构展示
+
 `./svn_log.sh -m 1233 HEAD wangjichao diff`
 - - 查看1233版本到当前HEAD之间wangjichao修改的文件，并存入diff目录
 
