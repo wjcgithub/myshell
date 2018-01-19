@@ -1,3 +1,4 @@
+
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
 __author__ = 'Wangjichao'
@@ -5,6 +6,7 @@ import os,os.path,re,sys
 
 # 编写一个程序，能在当前目录以及当前目录的所有子目录下查找文件名包含指定字符串的文件，并打印出相对路径。
 def findFile(dir):
+    olddir = dir
     if os.path.isdir(dir):
         for x in os.listdir(dir):
             if(x=='.' or x=='..'):
@@ -13,9 +15,10 @@ def findFile(dir):
             if os.path.isdir(newdirorfile):
                 findFile(newdirorfile)
             else:
-                regex=r'^/.*app'
-                newdirorfile, number = re.subn(regex, '', newdirorfile)
-                print('/app'+newdirorfile)
+                regex=r'tree'
+                newdirorfile = re.sub(regex, '', newdirorfile)
+                # print('/app'+newdirorfile)
+                print(newdirorfile)
     else:
         print(dir+'不是一个路径')
 
